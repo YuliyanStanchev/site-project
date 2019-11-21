@@ -1,0 +1,28 @@
+title: Матраци Латекс - Русе
+email: latex@gmail.com
+phone: +359 894 558 601
+description: ВАШИЯТ КОМФОРТ Е НАШ ПРИОРИТЕТ.Ако за вас най-важният критерий при изборът на матрак е комфорта , пенолатексовият матрак несъмнено е най-добрият избор. Няма го люлеенето и скърцането на пружинният матрак, както и неравностите по повърхността след не много дълга употреба. Чувството на подкрепа и еластичност е несравнимо с това , което дава матрака от пенополиуретан (дунапрен).
+baseurl: "/site-project" 
+url: "" 
+twitter_username: vkolicov
+github_username:  vkolicov
+destination: docs
+
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+ exclude:
+   - docs
+   - .sass-cache/
+   - .jekyll-cache/
+   - gemfiles/
+   - Gemfile
+   - Gemfile.lock
+   - node_modules/
+   - vendor/bundle/
+   - vendor/cache/
+   - vendor/gems/
+   - vendor/ruby/
