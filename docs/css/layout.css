@@ -1,0 +1,22 @@
+body {
+    background: rgba(163, 176, 211, 0.692);
+    color: darkblue;
+    
+}
+
+.site {
+    max-width: var(--layout-width, 60em);
+    margin: 0 auto;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.image {
+    display: block;
+    width:40%;
+    height: auto;
+}
