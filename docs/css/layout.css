@@ -1,6 +1,10 @@
 body {
-    background: rgba(163, 176, 211, 0.692);
+    background: white;
     color: darkblue;
+    /* background-image: url("http://ematraci.bg/wp-content/uploads/2016/06/matraci-latex-econ.png");*/
+    height: 100%;
+    background-position: center;
+    background-size: cover;
     
 }
 
@@ -12,6 +16,9 @@ body {
 .site-header {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    /* background-image: url("https://www.praktichendom.com/wp-content/uploads/2014/02/lateksovi-matraci.jpg");*/
+    
     
 }
 
@@ -19,4 +26,6 @@ body {
     display: block;
     width:40%;
     height: auto;
+    background-position: center;
 }
+

@@ -2,6 +2,8 @@ html {
     font-size: var(--font-size, 15px);
     line-height: var(--font-line-height, 10);
     font-family: var(--font-family-main, 'Verdana, sans-serif');
+    resize: both;
+    overflow: auto
 }
 
 body, form, input, textarea, option, select, button {
@@ -10,24 +12,38 @@ body, form, input, textarea, option, select, button {
 
 p, ul, ol {
     padding-bottom: var(--layout-padding-b, 1.5em);
+    
 }
 
 ul, ol {
     padding-left: 2.5em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4{
     padding-bottom: 0.5rem;
     padding-top: 1.5rem;
     font-weight: normal;
 }
 
 h1 { font-size: 2.6em; }
-h2 { font-size: 2.0em; }
+h2 { 
+    font-size: 2.0em;
+     
+}
 h3 { font-size: 1.6em; }
 h4 { font-size: 1.4em; }
-h5 { font-size: 1.2em; }
-h6 { font-size: 1.0em; }
+h5 { 
+    font-size: 1.2em;
+    color:rgb(223, 12, 12);
+ }
+h6 { 
+    font-size: 1.2em;
+    color:rgb(75, 33, 92);
+    }
+p1 {
+    font-size: 1.5em;
+}
+
 
 
 
