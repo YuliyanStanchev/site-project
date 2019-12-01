@@ -23,31 +23,53 @@ div.gallery {
   }
 
 @media only screen and (min-device-width: 480px){
-  body::before {
-    content: "tablet to some desktop media query (769 > 1281) fired";
-    font-weight: bold;
-    display: block;
+  div.gallery {
+    margin: 4px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    height: 350px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid blue;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    
+    padding: 10px;
+    font-size: 0.7rem;
     text-align: center;
-    background: rgba(255, 255, 0, 0.9); /* Semi-transparent yellow */
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
   }
 }
 @media only screen and (min-device-width: 768px){
-  body::before {
-    content: "tablet to some desktop media query (769 > 1281) fired";
-    font-weight: bold;
-    display: block;
+  div.gallery {
+    margin: 4px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    height: 350px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid blue;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    
+    padding: 10px;
+    font-size: 0.7rem;
     text-align: center;
-    background: rgba(255, 255, 0, 0.9); /* Semi-transparent yellow */
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
   }
 }
 
