@@ -2,8 +2,9 @@ html {
     font-size: var(--font-size, 15px);
     line-height: var(--font-line-height, 10);
     font-family: var(--font-family-main, 'Verdana, sans-serif');
-    resize: both;
-    overflow: auto
+    margin:auto;
+    max-width:95%;
+    min-width:800px
 }
 
 body, form, input, textarea, option, select, button {
