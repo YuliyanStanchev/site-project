@@ -1,44 +1,60 @@
-.nav {
-    text-align: right;
-    padding-top: 0.5em;
-}   
 
-.nav ul {
-    display: flex;
+nav {
+    
 }
-
-.nav ul li {
+nav ul {
+    display: flex;
+    
+}
+nav ul li {
     display: block;
-    margin: 0 0.7em;
+    list-style: none outside;
+    padding: 0 0.5em;
+    transform: translate(0, -5em);
+    opacity: 0;
+    transition: opacity 0.4s ease-in, transform 0.4s ease-in;
 }
 
-.nav a {
-    display: flex;
+nav ul li:nth-child(1) { transition-delay: 0.4s; }
+nav ul li:nth-child(2) { transition-delay: 0.3s; }
+nav ul li:nth-child(3) { transition-delay: 0.2s; }
+nav ul li:nth-child(4) { transition-delay: 0.1s; }
+
+.loaded nav ul li {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+.nav ul li a {
+    display: block;
     padding: 0.5em 1em;
-    background: rgba(0, 0, 255, 0.678);
-    color: #FFF;
-    text-decoration: none;
-    border-radius: 3em;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 0.2em;
+    transition: background 0.3s ease-in;
 }
-
-.nav a:hover {
-    background: red;
-    color:#FFF;
-    word-spacing: normal;
+.nav ul li a:hover{
+    background: rgba(5, 48, 26, 0.9);
 }
-
-.nav li a:before {
-    display: block;
+nav li a:before {
+    display: initial;
     margin-right: 0.5em;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     
 }
-
-.nav li.page-title-about a:before {
+nav li.page-title-about a:before {
     content: '\f47f';
 }
 
 .nav li.page-title-contacts a:before {
     content: '\f2a0';
 }
+
+.nav li.page-title-mattresses a:before {
+    content: '\f233';
+}
+
+.nav li.page-title-home a:before {
+    content: '\f494';
+}
+
+

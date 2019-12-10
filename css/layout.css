@@ -1,31 +1,41 @@
 body {
     background: white;
     color: darkblue;
-    /* background-image: url("http://ematraci.bg/wp-content/uploads/2016/06/matraci-latex-econ.png");*/
-    height: 100%;
+    
+    padding: 1em;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
+   
+    
     
 }
+
 
 .site {
     max-width: var(--layout-width, 60em);
     margin: 0 auto;
+    
 }
 
 .site-header {
+    background: #369;
+    color: #FFF;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.5) ;
+    justify-content: space-between;    
     display: flex;
-    justify-content: space-between;
-    position: relative;
-    /* background-image: url("https://www.praktichendom.com/wp-content/uploads/2014/02/lateksovi-matraci.jpg");*/
-    
-    
+    align-items: center;
 }
 
-.image {
-    display: block;
-    width:40%;
-    height: auto;
-    background-position: center;
+.site-header h1, .site-header nav {
+    padding: 1rem 1.4rem;
 }
+
+.site-header a {
+    color: #FFF;
+    text-decoration: none;
+}
+
 

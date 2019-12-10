@@ -1,7 +1,15 @@
 .page-about {
-    background: url(https://www.brava.bg/media/wysiwyg/Cover_latex_mattress_SG_1800x.jpg);
+/*    background-image: url(https://matraci-online.bg/images/stories/LateksEKON/matraci-lateks-ekon-fabrika-matraci-online.jpg); */
+    
+    
+  
 }
 
 .page-contacts{
-    background: url(https://www.janeirodigital.com/wp-content/uploads/2017/03/jd-contact-us-hero-bg.png);
+/*    background: url(https://www.janeirodigital.com/wp-content/uploads/2017/03/jd-contact-us-hero-bg.png);*/
 }
+
+.page-home {
+    background-image: url("https://fortunapaints.bg/wp-content/uploads/2018/05/MG_0007-copy.jpg");
+}
+

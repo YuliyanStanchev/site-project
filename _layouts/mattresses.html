@@ -12,29 +12,14 @@
 </head>
 <body class="page-{{ page.title | slugify }}">
     <div class="site">
-        
-        <header class="site-header">
-            
-            
-                
-                <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-                {% include navigation.html %}
-            
-           
-                
-            
-        
-        </header>
-        
-        <main class="site-main">
-            {{ content }}
-        </main>
-        
-
-        <footer class="site-footer">
-            <p>{{ site.title }} &copy; All rights reserved;</p>
-        </footer>
-
+      <header class="site-header">
+        <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+        {% include navigation.html %}         
+      </header>
+      {% include gallery.html %}
+      <main class="site-main">
+        {{ content }}
+      </main>
     </div>
 </body>
 </html>

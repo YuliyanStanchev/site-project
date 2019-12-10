@@ -7,26 +7,9 @@ html {
     min-width:800px
 }
 
-body, form, input, textarea, option, select, button {
-    font: inherit;
-}
 
-p, ul, ol {
-    padding-bottom: var(--layout-padding-b, 1.5em);
-    
-}
 
-ul, ol {
-    padding-left: 2.5em;
-}
-
-h1, h2, h3, h4{
-    padding-bottom: 0.5rem;
-    padding-top: 1.5rem;
-    font-weight: normal;
-}
-
-h1 { font-size: 2.6em; }
+h1 { font-size: 1.2em; }
 h2 { 
     font-size: 2.0em;
      
@@ -42,8 +25,12 @@ h6 {
     color:rgb(75, 33, 92);
     }
 p1 {
-    font-size: 1.5em;
+    font-size: 1em;
 }
+p {
+    color: rgb(207, 191, 191);
+}
+
 
 
 
