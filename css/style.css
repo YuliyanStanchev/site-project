@@ -2,8 +2,9 @@ div.gallery {
   margin: 4px;
   border: 1px solid #ccc;
   float: left;
-  width: 180px;
+  width: 197.5px;
   height: 350px;
+  
 }
   
 div.gallery:hover {
@@ -21,6 +22,30 @@ div.desc {
   text-align: center;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+#more {display: none;}
+
+@media only screen and (max-width: 700px) {
+  div.gallery {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  div.gallery {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
 .mySlides {

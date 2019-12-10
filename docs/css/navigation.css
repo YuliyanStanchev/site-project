@@ -50,11 +50,11 @@ nav li.page-title-about a:before {
 }
 
 .nav li.page-title-mattresses a:before {
-    content: '\f233';
+    content: '\f236';
 }
 
-.nav li.page-title-home a:before {
-    content: '\f494';
+.nav li.page-title-pillows a:before {
+    content: '\f462';
 }
 
 

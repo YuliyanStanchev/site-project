@@ -32,4 +32,11 @@ body {
     text-decoration: none;
 }
 
+.site-footer p {
+    padding: 1rem;
+    
+}
 
+.page-about, .page-contacts {
+    background-color: thistle;
+}
