@@ -1,22 +1,16 @@
 body {
     background: white;
     color: darkblue;
-    
     padding: 1em;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-   
-    
-    
 }
-
 
 .site {
     max-width: var(--layout-width, 60em);
     margin: 0 auto;
-    
 }
 
 .site-header {

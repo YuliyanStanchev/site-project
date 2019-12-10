@@ -8,19 +8,18 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/css/fontawesome/css/all.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
-
+    <script>
+        window.addEventListener('load', (event) => {
+          document.querySelector('body').classList.add('loaded');
+        });
+    </script>
 </head>
 <body class="page-{{ page.title | slugify }}">
     <div class="site">
         
         <header class="site-header">
-            
-            
-                
-                <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-                {% include navigation.html %}
-            
-           
+            <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+            {% include navigation.html %}
         </header>
         
         <main class="site-main">
