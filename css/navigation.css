@@ -31,8 +31,9 @@ nav ul li:nth-child(4) { transition-delay: 0.1s; }
     border-radius: 0.2em;
     transition: background 0.3s ease-in;
 }
+.nav .current-page a,
 .nav ul li a:hover{
-    background: rgba(5, 48, 26, 0.9);
+    background: rgb(190, 158, 190);
 }
 nav li a:before {
     display: initial;
