@@ -1,4 +1,4 @@
-title: МАТРАЦИ ЛАТЕКС РУСЕ - ВАШИЯТ КОМФОРТ Е НАШ ПРИОРИТЕТ
+title: МАТРАЦИ LATEX - ВАШИЯТ КОМФОРТ Е НАШ ПРИОРИТЕТ
 email: latex@gmail.com
 phone: +359 894 558 601
 description: ВАШИЯТ КОМФОРТ Е НАШ ПРИОРИТЕТ.
@@ -14,16 +14,17 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 
-# exclude:
-#   - docs
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - docs
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - package.json
+  - package-lock.json
+  - gulpfile.js
+  - theme-personal
