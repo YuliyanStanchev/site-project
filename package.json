@@ -6,12 +6,11 @@
   "directories": {
     "doc": "docs"
   },
-  "dependencies": {
-    "gulp": "^4.0.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "child_process": "^1.0.2",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-csso": "^4.0.1",
     "gulp-sass": "^4.0.2",
