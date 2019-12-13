@@ -1,74 +1,58 @@
 #more {display: none;}
 
   
-.gallery {
-    
-    .gallery-container {
-        margin: 0 auto;
-        max-width: 70rem;
-        padding: 2rem 0 0;
-	    display: grid;
-	    grid-template-columns: repeat(5,1fr);	
-        grid-auto-flow: row dense;
-        gap: 1rem;
+.sleepwear {
+  padding: 1rem;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: dense;
+  grid-gap: 1em;
 
-        .box {
-            width: 100%;
-            position: relative;
-            overflow: hidden;
-            border: 2px solid;
-            border-radius: 20px;
-        }
-        
-        .box:nth-child(3),
-        .box:nth-child(4),
-        .box:nth-child(7) {
-            grid-row-end: span 2;
-            grid-column-end: span 2;
-        }
+/*  @include bp(mobile) {
+      grid-template-columns: repeat(3, 1fr);
+  }
 
-        .box:nth-child(1),
-        .box:nth-child(5) {
-            grid-row-end: span 2;
-        }
-        
-        .box img{
-            display: block;
-            position: absolute;
-            left: 0;
-            right: 0;
-            width:100%;
-            height: 100%;    
-            object-fit: cover;    
-            transform: scale(1);
-        }
-        
-        .box:after{	
-            display: block;
-            content: "";
-            padding-top: 100%;
-        }
-    }
-}
+  @include bp(phone) {
+      grid-template-columns: repeat(2, 1fr);
+  }
+*/
+  li {
+      display: block;
+      list-style: none outside;
+      position: relative;
+      overflow: hidden;
+      border: 5px solid #369;
+      box-shadow: 0 0 1em 0 rgba(black, 0.2);
 
-$breakpoints: (
-  'phone':    ( max-width:  600px ),
-  'tablet':   ( max-width:  900px ),
-  'mobile':   ( max-width: 1024px ),
-  'desktop':  ( min-width: 1025px ),
-  'large':    ( min-width: 1600px ),
-) !default;
-
-@mixin bp($breakpoint) {
-    @if map-has-key($breakpoints, $breakpoint) {
-      @media #{inspect(map-get($breakpoints, $breakpoint))} {
-        @content;
+      &:before {
+          display: block;
+          content: '';
+          padding-top: 100%;
       }
-    }
-  @else {
-    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+
+  a {
+      display: block;
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+
+      &:before {
+          display: block;
+          content: '';
+          position: absolute;
+          top: 0; left: 0; right: 0; bottom: 0;
+          z-index: 5;
+          box-shadow: 0 0 0 0.3em #fff inset;
+      }
+  }
+
+  img {
+      display: block;
+      position: absolute;
+      width: auto;
+      height: 100%;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
   }
 }
-
-
