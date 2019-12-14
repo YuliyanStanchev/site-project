@@ -5,7 +5,7 @@
     float: left;
     width: 197.5px;
     height: 350px;
-    
+    padding: 0;
     opacity: 0.8;
     transition: transform 1s, opacity 1s;
     
@@ -20,7 +20,7 @@
   
 .gallery img {
   width: 100%;
-  height: auto;
+  height: 60%;
 }
   
 .desc {

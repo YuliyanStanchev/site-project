@@ -1,3 +1,5 @@
+* {box-sizing:border-box}
+
 .mySlides {
   display: none;
   margin: 2em;
@@ -6,8 +8,10 @@
 
 .mySlides img{
   width: 100%;
-  position: initial;
+  position: relative;
   border-radius: 0.4em;
+  max-width:100%;
+  height: 35em;
 }
 
 div.slideshow-container {
@@ -89,7 +93,17 @@ div.slideshow-container {
 
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 2s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
